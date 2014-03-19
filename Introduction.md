@@ -26,8 +26,8 @@ Restart apps and check out their newly-added “Compulsion” submenu under the 
 
 Send pull requests.
 
-
-### 
+  
+  
 
 © 2014 Jack Obb Almind
 
