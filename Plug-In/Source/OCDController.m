@@ -12,23 +12,23 @@
 - (void)addMenusToWindowMenu {
 	NSMenu *menu = [NSMenu new];
 	
-	[menu ocd_addItemWithTitle:@"Move" target:nil action:nil keyEquivalent:@""];
+	[menu ocd_addDisabledItemWithTitle:@"Move"];
 	
 	[menu ocd_addItemWithTitle:@"Move to Center" target:self action:@selector(moveWindowToCenter) keyEquivalent:@"c"];
 	
-	[menu ocd_addSeparatorItem];
+//	[menu ocd_addSeparatorItem];
 	
 	[menu ocd_addItemWithTitle:@"Move to Top Left"   target:self action:@selector(moveWindowToTopLeft)   keyEquivalent:@"q"];
 	[menu ocd_addItemWithTitle:@"Move to Top Center" target:self action:@selector(moveWindowToTopMiddle) keyEquivalent:@"w"];
 	[menu ocd_addItemWithTitle:@"Move to Top Right"  target:self action:@selector(moveWindowToTopRight)  keyEquivalent:@"e"];
 	
-	[menu ocd_addSeparatorItem];
+//	[menu ocd_addSeparatorItem];
 	
 	[menu ocd_addItemWithTitle:@"Move to Bottom Left"   target:self action:@selector(moveWindowToBottomLeft)   keyEquivalent:@"z"];
 	[menu ocd_addItemWithTitle:@"Move to Bottom Center" target:self action:@selector(moveWindowToBottomMiddle) keyEquivalent:@"x"];
 	[menu ocd_addItemWithTitle:@"Move to Bottom Right"  target:self action:@selector(moveWindowToBottomRight)  keyEquivalent:@"v"];
 	
-	[menu ocd_addSeparatorItem];
+//	[menu ocd_addSeparatorItem];
 	
 	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Up",    self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyUp)    keyEquivalent:@"↑"];
 	[menu ocd_addItemWithTitle:[NSString stringWithFormat:@"Move %.0f pt Right", self.nudgeGranularity] target:self action:@selector(moveWindowSlightlyRight) keyEquivalent:@"→"];
@@ -37,11 +37,13 @@
 	
 	[menu ocd_addSeparatorItem];
 	
+	[menu ocd_addDisabledItemWithTitle:@"Resize"];
+	
 	[menu ocd_addItemWithTitle:@"Resize to Screen Size"   target:self action:@selector(resizeWindowToScreenSize)   keyEquivalent:@"m"];
 	[menu ocd_addItemWithTitle:@"Resize to Screen Width"  target:self action:@selector(resizeWindowToScreenWidth)  keyEquivalent:@"j"];
 	[menu ocd_addItemWithTitle:@"Resize to Screen Height" target:self action:@selector(resizeWindowToScreenHeight) keyEquivalent:@"h"];
 	
-	[menu ocd_addSeparatorItem];
+//	[menu ocd_addSeparatorItem];
 	
 	[menu ocd_addItemWithTitle:@"Resize to ⅔ Screen Width" target:self action:@selector(resizeWindowToTwoThirdsOfScreenWidth)   keyEquivalent:@"1"];
 	[menu ocd_addItemWithTitle:@"Resize to ½ Screen Width" target:self action:@selector(resizeWindowToOneHalfOfScreenWidth)     keyEquivalent:@"2"];
@@ -55,10 +57,14 @@
 	
 	[menu ocd_addSeparatorItem];
 	
+	[menu ocd_addDisabledItemWithTitle:@"Level"];
+	
 	[menu ocd_addItemWithTitle:@"Desktop Level"  target:self action:@selector(toggleWindowDesktopLevel)  keyEquivalent:@"d"];
 	[menu ocd_addItemWithTitle:@"Floating Level" target:self action:@selector(toggleWindowFloatingLevel) keyEquivalent:@"f"];
 	
 	[menu ocd_addSeparatorItem];
+	
+	[menu ocd_addDisabledItemWithTitle:@"Spaces"];
 	
 	[menu ocd_addItemWithTitle:@"Joins All Spaces" target:self action:@selector(toggleWindowCanJoinAllSpacesCollectionBehavior) keyEquivalent:@"s"];
 	

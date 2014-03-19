@@ -5,14 +5,14 @@
 
 ### Installation
 
-Open the **Compulsion.pkg** and click Next in the Installer.
+Open the *Compulsion 0.60.pkg* and click Next in the Installer.
 
 If you already have SIMBL installed it will be upgraded to the version shipping with Compulsion.
 
 
 ### Usage
 
-Restart apps and check out their newly-added Compulsion submenu under the Window menu.
+Restart apps and check out their newly-added “Compulsion” submenu under the “Window” menu.
 
 
 ### Contributing
