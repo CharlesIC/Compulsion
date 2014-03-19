@@ -15,9 +15,9 @@ If you already have SIMBL installed it will be upgraded to the version shipping 
 Send pull requests.
 
 
-### Legal
+### 
 
-© 2014 Jakob Alminde
+© 2014 Jack Obb Almind
 
 License: [MIT](http://opensource.org/licenses/MIT)
 
