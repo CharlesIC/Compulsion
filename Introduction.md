@@ -19,7 +19,7 @@ Open the *Compulsion 0.60.pkg* and click Next in the Installer.
 
 Restart apps and check out their newly-added “Compulsion” submenu under the “Window” menu.
 
-![Compulsion 0.60 Menu](tree/master/Releases/0.60 Compulsion Menu.png)
+![Compulsion 0.60 Menu](https://github.com/almind/Compulsion/blob/master/Releases/0.60%20Compulsion%20Menu.png)
 
 
 ### Contributing
