@@ -3,7 +3,9 @@
 
 ### Installation
 
-Open the *Compulsion 0.60.pkg* and click Next in the Installer.
+Open *Compulsion.xcodeproj* and hit ⌘**B**.
+
+<!--Open the *Compulsion 0.60.pkg* and click Next in the Installer.-->
 
 <!--If you already have SIMBL installed it will be upgraded to the version shipping with Compulsion.-->
 
